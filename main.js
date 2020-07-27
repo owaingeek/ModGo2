@@ -10,19 +10,15 @@ client.once('ready', () => {
 });
 
 client.on ('message', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
-
-    const args = message.content.slice(prefix.legnth).split(/ +/);
-    const command = args.shift().toLowerCase();
-
-    if (command === 'ping'){
-        message.channel.send('Pong!');
+    if (message.content.startsWith(`${prefix}ping`)) {
+        message.channel.send('Pong.');
+    } else if (message.content.startsWith(`${prefix}beep`)) {
+        message.channel.send('Boop.');
     }
-});
 
 
 
 
 
 
-client.login(process.env.token);
+client.login(process.env.token);})
