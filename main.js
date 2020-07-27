@@ -18,6 +18,13 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
+    if (msg.content === 'Welcome me') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+client.on('message', msg => {
     if (msg.content === 'hi.') {
       msg.reply('Hi! How are you today??');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
