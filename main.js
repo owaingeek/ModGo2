@@ -11,6 +11,39 @@ client.once('ready', () => {
     client.user.setActivity("ModGo2 | In development | ModGo2")
 });
 
+client.on('message', message => {
+	if (message.content === ';ping') {
+		message.channel.send('Pong.');
+	}
+});
+
+client.on('message', message => {
+	if (message.content === ';help') {
+        message.channel.send('```;help               This screen here```');
+        message.channel.send('```;botversion         The bot version of this bot here```');
+        message.channel.send('```;users              Displays the ammount of peeps in the server```');
+        message.channel.send('```;favoratepeeps      The bot devs fav peeps```');
+	}
+});
+
+client.on('message', message => {
+	if (message.content === ';botversion') {
+		message.channel.send('We dont have a version for this bot yet. Sorry.');
+	}
+});
+
+client.on('message', message => {
+	if (message.content === ';users') {
+		message.channel.send('There is no specified ammount of people in this server and/or the bot dev was to lazy to add this in. :joy:');
+	}
+});
+
+client.on('message', message => {
+	if (message.content === ';favoratepeeps') {
+		message.channel.send('My fav peeps are OwainTehDevil');
+	}
+});
+
 client.on('message', msg => {
     if (msg.content === 'IP') {
       msg.reply('The IP is NetheriteCraft.serv.gs.');
@@ -44,3 +77,5 @@ client.on('message', msg => {
   });
 
   client.login(process.env.token);
+
+
