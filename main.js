@@ -14,7 +14,7 @@ client.once('ready', () => {
 client.on('message', msg => {
     if (msg.content === 'owners') {
       msg.reply('The owners are Liam and OwainTehDevil');
-      msg.channel.send('pong');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
 
