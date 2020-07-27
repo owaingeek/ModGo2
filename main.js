@@ -13,7 +13,7 @@ client.once('ready', () => {
 
 client.on('message', msg => {
     if (msg.content === 'owners') {
-      msg.reply('The owners are Liam and OwainTehDevil');
+      msg.reply('The owners are 𝐸𝓋𝒶, 𝒯𝒽𝑒 𝒜𝓃𝒾𝓂𝑒 𝒻𝑜𝓍, Liam and OwainTehDevil');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
