@@ -11,6 +11,11 @@ client.once('ready', () => {
     client.user.setActivity("ModGo2 | In development | ModGo2")
 });
 
-
+client.on('message', msg => {
+    if (msg.content === 'owners') {
+      msg.reply('The owners are Liam and OwainTehDevil');
+      msg.channel.send('pong');
+    }
+  });
 
 client.login(process.env.token);
