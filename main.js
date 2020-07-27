@@ -18,6 +18,70 @@ client.on('message', message => {
 });
 
 client.on('message', msg => {
+    if (msg.content === 'welcome me!') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
+    if (msg.content === 'welcome me.') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
+    if (msg.content === 'welcome me') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
+    if (msg.content === 'Welcome Me.') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
+    if (msg.content === 'Welcome Me!') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
+    if (msg.content === 'Welcome Me') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
+    if (msg.content === 'Welcome me!') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
+    if (msg.content === 'Welcome me.') {
+      msg.reply('Welcome man!!');
+      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+
+client.on('message', msg => {
     if (msg.content === 'Welcome me') {
       msg.reply('Welcome man!!');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
