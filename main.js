@@ -5,21 +5,15 @@ const client = new Discord.Client();
 const prefix = ';';
 
 
-const activities_list = [
-  "ModGo2",
-  "with the ;help command.", 
-  "with the developers console",
-  "with some code", 
-  "with JavaScript",
-  "with developement"
-  ]; // creates an arraylist containing phrases you want your bot to switch through.
+client.once('ready', () => {
+    console.log('ModGo2 is online!');
+    
 
-client.on('ready', () => {
-  setInterval(() => {
-      const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
-      bot.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
-  }, 10000); // Runs this every 10 seconds.
+    client.user.setActivity("ModGo2 | In development | ModGo2")
+
 });
+
+client.once
 
 
 
