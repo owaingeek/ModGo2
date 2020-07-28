@@ -5,45 +5,28 @@ const client = new Discord.Client();
 const prefix = ';';
 
 
-client.once('ready', () => {
-    console.log('ModGo2 is online!');
+const activities_list = [
+  "ModGo2",
+  "with the ;help command.", 
+  "with the developers console",
+  "with some code", 
+  "with JavaScript",
+  "with developement"
+  ]; // creates an arraylist containing phrases you want your bot to switch through.
 
-    client.user.setActivity("ModGo2 | In development | ModGo2")
+bot.on('ready', () => {
+  setInterval(() => {
+      const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
+      bot.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
+  }, 10000); // Runs this every 10 seconds.
 });
 
-client.on('message', message => {
-  let args = message.content.substring(PREFIX.length).split(" ")
 
-  switch (args[0]) {
-    case 'kick':
-      if(!args[1]) message.channel.send('You need to tag a player to continue!')
-      const user = message.mentions.users.first();
-
-      if(user){
-        const member = member.guild.member(user);
-
-        if (member){
-          member.kick('An administrator kicked you!').then(()=>{
-            message.reply(`Sucessfully kicked ${user.tag}`)
-
-
-          });
-
-
-        }
-
-
-
-      }
-  }
-
-
-});
 
 client.on('message', message => {
 	if (message.content === ';botdevs') {
 		message.channel.send('The current bot dev(s) are OwainTehDevil');
-	}
+  }
 });
 
 client.on('message', message => {
