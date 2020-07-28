@@ -12,6 +12,35 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
+  let args = message.content.substring(PREFIX.length).split(" ")
+
+  switch (args[0]) {
+    case 'kick':
+      if(!args[1]) message.channel.send('You need to tag a player to continue!')
+      const user = message.mentions.users.first();
+
+      if(user){
+        const member = member.guild.member(user);
+
+        if (member){
+          member.kick('An administrator kicked you!').then(()=>{
+            message.reply(`Sucessfully kicked ${user.tag}`)
+
+
+          });
+
+
+        }
+
+
+
+      }
+  }
+
+
+});
+
+client.on('message', message => {
 	if (message.content === ';botdevs') {
 		message.channel.send('The current bot dev(s) are OwainTehDevil');
 	}
@@ -140,6 +169,7 @@ client.on('message', message => {
         message.channel.send('```;users              Displays the ammount of peeps in the server```');
         message.channel.send('```;favoratepeeps      The bot devs fav peeps```');
         message.channel.send('```;botdevs            The current bot devs.```')
+        message.channel.send('```;kick {user}        Kicks the user tagged.```')
 	}
 });
 
