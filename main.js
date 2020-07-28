@@ -12,6 +12,12 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
+	if (message.content === ';botdevs') {
+		message.channel.send('The current bot dev(s) are OwainTehDevil');
+	}
+});
+
+client.on('message', message => {
 	if (message.content === ';ping') {
 		message.channel.send('Pong.');
 	}
@@ -133,6 +139,7 @@ client.on('message', message => {
         message.channel.send('```;botversion         The bot version of this bot here```');
         message.channel.send('```;users              Displays the ammount of peeps in the server```');
         message.channel.send('```;favoratepeeps      The bot devs fav peeps```');
+        message.channel.send('```;botdevs            The current bot devs.```')
 	}
 });
 
