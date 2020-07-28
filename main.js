@@ -146,7 +146,7 @@ client.on('message', message => {
         message.channel.send('```;users              Displays the ammount of peeps in the server```');
         message.channel.send('```;favoratepeeps      The bot devs fav peeps```');
         message.channel.send('```;botdevs            The current bot devs.```')
-        message.channel.send('```;kick {user}        Kicks the user tagged.```')
+        
 	}
 });
 
@@ -195,7 +195,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
     if (msg.content === 'owners') {
-      msg.reply('The owners are 𝐸𝓋𝒶, 𝒯𝒽𝑒 𝒜𝓃𝒾𝓂𝑒 𝒻𝑜𝓍, Liam and OwainTehDevil');
+      msg.reply('The owners are Liam and OwainTehDevil');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
