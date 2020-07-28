@@ -10,6 +10,7 @@ client.once('ready', () => {
     
 
     client.user.setActivity("ModGo2 | In development | ModGo2")
+    
 
 });
 
@@ -141,11 +142,13 @@ client.on('message', msg => {
 
 client.on('message', message => {
 	if (message.content === ';help') {
+
+        message.channel.send('Command Help:')
         message.channel.send('```;help               This screen here```');
         message.channel.send('```;botversion         The bot version of this bot here```');
         message.channel.send('```;users              Displays the ammount of peeps in the server```');
         message.channel.send('```;favoratepeeps      The bot devs fav peeps```');
-        message.channel.send('```;botdevs            The current bot devs.```')
+        message.channel.send('```;botdevs            The current bot devs.```');
         
 	}
 });
