@@ -9,7 +9,7 @@ client.once('ready', () => {
     console.log('ModGo2 is online!');
     
 
-    client.user.setActivity("ModGo2 | In development | ModGo2")
+    client.user.setActivity("ModGo2 | In development | Do ;help for help | ModGo2")
     
 
 });
