@@ -5,17 +5,17 @@ const client = new Discord.Client();
 const prefix = ';';
 
 
+
 client.once('ready', () => {
     console.log('ModGo2 is online!');
     
 
-    client.user.setActivity("ModGo2 | In development | Do ;help for help | ModGo2")
+    client.user.setActivity("with ModGo2 | In development | Do ;help for help | ModGo2")
     
 
 });
 
 client.once
-
 
 
 client.on('message', message => {
@@ -36,8 +36,6 @@ client.on('message', msg => {
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
-
-
 client.on('message', msg => {
     if (msg.content === 'welcome me.') {
       msg.reply('Welcome man!!');
