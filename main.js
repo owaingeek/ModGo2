@@ -48,7 +48,7 @@ async function execute(message, serverQueue) {
       "I need the permissions to join and speak in your voice channel!"
     );
   }
-} const songInfo = wait ytdl.getInfo(args[1]);
+} const songInfo = await ytdl.getInfo(args[1]);
 const song = {
  title: songInfo.title,
  url: songInfo.video_url,
@@ -75,7 +75,7 @@ const queueContruct = {
  
  try {
   // Here we try to join the voicechat and save our connection into our object.
-  var connection = wait voiceChannel.join();
+  var connection = await voiceChannel.join();
   queueContruct.connection = connection;
   // Calling the play function to start a song
   play(message.guild, queueContruct.songs[0]);
@@ -123,16 +123,17 @@ client.once('disconnect', () => {
 
 client.once
 
+
 client.on('message', message => {
-  if (message.content === ';botdevs') {
-    message.channel.send('The current bot dev(s) are OwainTehDevil');
+	if (message.content === ';botdevs') {
+		message.channel.send('The current bot dev(s) are OwainTehDevil');
   }
 });
 
 client.on('message', message => {
-  if (message.content === ';ping') {
-    message.channel.send('Pong.');
-  }
+	if (message.content === ';ping') {
+		message.channel.send('Pong.');
+	}
 });
 
 client.on('message', msg => {
@@ -148,12 +149,14 @@ client.on('message', msg => {
     }
   });
 
+
 client.on('message', msg => {
     if (msg.content === 'welcome me') {
       msg.reply('Welcome man!!');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
+
 
 client.on('message', msg => {
     if (msg.content === 'Welcome Me.') {
@@ -162,12 +165,14 @@ client.on('message', msg => {
     }
   });
 
+
 client.on('message', msg => {
     if (msg.content === 'Welcome Me!') {
       msg.reply('Welcome man!!');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
+
 
 client.on('message', msg => {
     if (msg.content === 'Welcome Me') {
@@ -176,6 +181,7 @@ client.on('message', msg => {
     }
   });
 
+
 client.on('message', msg => {
     if (msg.content === 'Welcome me!') {
       msg.reply('Welcome man!!');
@@ -183,12 +189,14 @@ client.on('message', msg => {
     }
   });
 
+
 client.on('message', msg => {
     if (msg.content === 'Welcome me.') {
       msg.reply('Welcome man!!');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
+
 
 client.on('message', msg => {
     if (msg.content === 'Welcome me') {
@@ -204,12 +212,14 @@ client.on('message', msg => {
     }
   });
 
+
 client.on('message', msg => {
     if (msg.content === 'Hi.') {
       msg.reply('Hi! How are you today??');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
+
 
 client.on('message', msg => {
     if (msg.content === 'hi') {
@@ -218,12 +228,14 @@ client.on('message', msg => {
     }
   });
 
+
 client.on('message', msg => {
     if (msg.content === 'Hi!') {
       msg.reply('Hi! How are you today??');
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
     }
   });
+
 
 client.on('message', msg => {
     if (msg.content === 'Hi') {
@@ -233,7 +245,7 @@ client.on('message', msg => {
   });
 
 client.on('message', message => {
-  if (message.content === ';help') {
+	if (message.content === ';help') {
 
         message.channel.send('Command Help:')
         message.channel.send('```;help               This screen here```');
@@ -242,25 +254,25 @@ client.on('message', message => {
         message.channel.send('```;favoratepeeps      The bot devs fav peeps```');
         message.channel.send('```;botdevs            The current bot devs.```');
         
-  }
+	}
 });
 
 client.on('message', message => {
-  if (message.content === ';botversion') {
-    message.channel.send('We dont have a version for this bot yet. Sorry.');
-  }
+	if (message.content === ';botversion') {
+		message.channel.send('We dont have a version for this bot yet. Sorry.');
+	}
 });
 
 client.on('message', message => {
-  if (message.content === ';users') {
-    message.channel.send('There is no specified ammount of people in this server and/or the bot dev was to lazy to add this in. :joy:');
-  }
+	if (message.content === ';users') {
+		message.channel.send('There is no specified ammount of people in this server and/or the bot dev was to lazy to add this in. :joy:');
+	}
 });
 
 client.on('message', message => {
-  if (message.content === ';favoratepeeps') {
-    message.channel.send('My fav peeps are OwainTehDevil');
-  }
+	if (message.content === ';favoratepeeps') {
+		message.channel.send('My fav peeps are OwainTehDevil');
+	}
 });
 
 client.on('message', msg => {
@@ -287,6 +299,7 @@ client.on('message', msg => {
 
 
 
+
 client.on('message', msg => {
     if (msg.content === 'owners') {
       msg.reply('The owners are Liam and OwainTehDevil');
@@ -295,6 +308,5 @@ client.on('message', msg => {
   });
 
   client.login(process.env.token);
-
 
 
