@@ -51,7 +51,7 @@ async function execute(message, serverQueue) {
       "I need the permissions to join and speak in your voice channel!"
     );
   }
-} const songInfo = await ytdl.getInfo(args[1]);
+}async const songInfo = await ytdl.getInfo(args[1]);
 const song = {
  title: songInfo.title,
  url: songInfo.video_url,
