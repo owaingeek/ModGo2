@@ -16,14 +16,14 @@ client.once('ready', () => {
 });
 
 client.once('ready', () => {
-  console.log('Ready!');
- });
- client.once('reconnecting', () => {
-  console.log('Reconnecting!');
- });
- client.once('disconnect', () => {
-  console.log('Disconnect!');
- });
+ console.log('Ready!');
+});
+client.once('reconnecting', () => {
+ console.log('Reconnecting!');
+});
+client.once('disconnect', () => {
+ console.log('Disconnect!');
+});
 
 client.once
 
