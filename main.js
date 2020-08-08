@@ -6,6 +6,9 @@ const prefix = ';';
 
 const ytdl = require('ytdl-core')
 
+const async = require('asynckit') 
+
+
 client.once('ready', () => {
     console.log('ModGo2 is online!');
     
