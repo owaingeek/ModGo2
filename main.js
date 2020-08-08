@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 const prefix = ';';
 
-
+const ytdl = require('ytdl-core')
 
 client.once('ready', () => {
     console.log('ModGo2 is online!');
@@ -14,6 +14,16 @@ client.once('ready', () => {
     
 
 });
+
+client.once('ready', () => {
+  console.log('Ready!');
+ });
+ client.once('reconnecting', () => {
+  console.log('Reconnecting!');
+ });
+ client.once('disconnect', () => {
+  console.log('Disconnect!');
+ });
 
 client.once
 
