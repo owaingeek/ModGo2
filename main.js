@@ -8,7 +8,7 @@ client.once('ready', () => {
     console.log('ModGo2 is online!');
     
 
-    client.user.setActivity("with ModGo2 | In development | Do ;help for help | ModGo2")
+    client.user.setActivity("Please don't use.")
     
 
 });
