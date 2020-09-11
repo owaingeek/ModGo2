@@ -15,7 +15,7 @@ client.once('ready', () => {
 
 
 
-
+emitter.setMaxListeners(100000000)
 
 
 
