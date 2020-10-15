@@ -8,10 +8,10 @@ client.once('ready', () => {
     console.log('ModGo2 is online!');
     
 
-    client.user.setActivity("Please don't use.")
+    client.user.setActivity("User being edited.   Please wait.")
     
 
-});
+})
 
 
 
