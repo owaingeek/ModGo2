@@ -211,6 +211,12 @@ client.on('message', msg => {
       
     }
   });
+  client.on('message', msg => {
+    if (msg.content === ';emojis') {
+     client.getMaxListeners(100);
+      
+    }
+  })
 
   client.login(process.env.token);
 
