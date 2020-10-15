@@ -9,6 +9,8 @@ client.once('ready', () => {
     
 
     client.user.setActivity("User being edited.   Please wait.")
+    Wait(20)
+    client.user.setActivity("ModGo2 | Development mode | ModGo2")
     
 
 })
