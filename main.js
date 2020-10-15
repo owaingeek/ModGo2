@@ -8,7 +8,7 @@ client.once('ready', () => {
     console.log('ModGo2 is online!');
     
 
-    client.user.setActivity("User being edited.   Please wait.")
+    client.user.setActivity("ModGo2 | Use ;help to get help | ModGo2")
     
     
 
@@ -200,8 +200,15 @@ client.on('message', msg => {
 
 client.on('message', msg => {
     if (msg.content === 'owners') {
-      msg.reply('The owners are Liam and OwainTehDevil');
+      ;
       msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
+    }
+  });
+
+client.on('message', msg => {
+    if (msg.content === 'ip') {
+      client.user.setActivity("ModGo2 | Use ;help to get help | In development mode. Expect reboots | ModGo2");
+      client.user.setPresence (Donotdisturb)
     }
   });
 
