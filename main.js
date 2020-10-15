@@ -208,7 +208,6 @@ client.on('message', msg => {
 client.on('message', msg => {
     if (msg.content === ';devmode') {
       client.user.setActivity("ModGo2 | Use ;help to get help | In development mode. Expect reboots | ModGo2");
-      client.user.setPresence (Donotdisturb)
     }
   });
 
