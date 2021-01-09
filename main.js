@@ -24,7 +24,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 	if (message.content === ';botdevs') {
-		message.channel.send('The current bot dev(s) are OwainTehDevil');
+		message.channel.send('The current bot dev(s) are OwainTehNitroDevil');
   }
 });
 
