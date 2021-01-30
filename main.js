@@ -8,7 +8,7 @@ client.once('ready', () => {
     console.log('ModGo2 is online!');
     
 
-    client.user.setActivity("ModGo2 | Use ;help to get help | ModGo2")
+    client.user.setActivity("Scottish Role Play // Use ;help to open the help menu // Scottish Role Play")
     
     
 
@@ -24,7 +24,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 	if (message.content === ';botdevs') {
-		message.channel.send('The current bot dev(s) are OwainTehNitroDevil');
+		message.channel.send('The current bot dev(s) are OwainTehNitroDevil and shay..');
   }
 });
 
@@ -169,45 +169,13 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === ';favoratepeeps') {
-		message.channel.send('My fav peeps are OwainTehDevil');
+		message.channel.send('My fav peeps are OwainTehNitroDevil and shay..');
 	}
 });
 
 client.on('message', msg => {
-    if (msg.content === 'IP') {
-      msg.reply('The IP is NetheriteCraft.serv.gs.');
-      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
-    }
-  });
-
-client.on('message', msg => {
-    if (msg.content === 'Ip') {
-      msg.reply('The IP is NetheriteCraft.serv.gs.');
-      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
-    }
-  });
-
-client.on('message', msg => {
-    if (msg.content === 'ip') {
-      msg.reply('The IP is NetheriteCraft.serv.gs.');
-      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
-    }
-  });
-
-
-
-
-
-client.on('message', msg => {
-    if (msg.content === 'owners') {
-      ;
-      msg.channel.send('Hey!! Please dont hate I am only a bot and I am still being deved. :sob:');
-    }
-  });
-
-client.on('message', msg => {
     if (msg.content === ';devmode') {
-      client.user.setActivity("ModGo2 | Use ;help to get help | In development mode. Expect reboots | ModGo2");
+      client.user.setActivity("Scottish Role Play // Use ;help to get help // In development mode. Expect reboots // Scottish Role Play");
       
     }
   });
