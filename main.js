@@ -7,8 +7,8 @@ const prefix = ';';
 client.once('ready', () => {
     console.log('ModGo2 is online!');
     
-
-    client.user.setActivity("Scottish Role Play // Use ;help to open the help menu // Scottish Role Play")
+ 
+    client.user.setActivity("ModGo2 // Use ;help to open the help menu // ModGo2")
     
     
 
@@ -24,7 +24,7 @@ client.once('ready', () => {
 
 client.on('message', message => {
 	if (message.content === ';botdevs') {
-		message.channel.send('The current bot dev(s) are OwainTehNitroDevil and shay..');
+		message.channel.send('The current bot dev(s) are OwainTehDevil');
   }
 });
 
@@ -151,7 +151,7 @@ client.on('message', message => {
         message.channel.send('```;users              Displays the ammount of peeps in the server```');
         message.channel.send('```;favoratepeeps      The bot devs fav peeps```');
         message.channel.send('```;botdevs            The current bot devs.```');
-        
+        message.channel.send('```----------------------------------------------------------------------```');
 	}
 });
 
@@ -169,13 +169,13 @@ client.on('message', message => {
 
 client.on('message', message => {
 	if (message.content === ';favoratepeeps') {
-		message.channel.send('My fav peeps are OwainTehNitroDevil and shay..');
+		message.channel.send('My fav peeps are OwainTehDevil');
 	}
 });
 
 client.on('message', msg => {
     if (msg.content === ';devmode') {
-      client.user.setActivity("Scottish Role Play // Use ;help to get help // In development mode. Expect reboots // Scottish Role Play");
+      client.user.setActivity("ModGo2 // Use ;help to get help // In development mode. Expect reboots // ModGo2");
       
     }
   });
